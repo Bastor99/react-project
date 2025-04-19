@@ -1,56 +1,62 @@
 import logo from '../logo.svg'
+import styles from './Navbar.module.css'
 
 function Navbar() {
     return (
-        <div>
-            <div class="personalOrBusiness">
-                <ul>
-                    <li>Personal</li>
-                    <li>Business</li>
-                </ul>
+        <div className={styles.primary}>
+            <div className={styles.personalOrBusiness}>
+                <a>Personal</a>
+                <a>Business</a>
             </div>
-            <div class="mainList">
-                <ul>
-                    {/* logo */}
-                    <li><img src={logo}></img></li>
-                    <li>
-                        <div class="dropdown1">
-                            <button class="dropbtn">What we offer</button>
-                        </div>
-                        <div class="dropdown1-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown2">
-                            <button class="dropbtn">Benefits</button>
-                        </div>
-                        <div class="dropdown1-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown3">
-                            <button class="dropbtn">Learn</button>
-                        </div>
-                        <div class="dropdown1-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li>Support</li>
-                    <li>
-                        <div class="navButtons">
-                            <button>Log in</button>
-                            <button>Get Started</button>
-                        </div>
-                    </li>
-                </ul>
+            {/* logo */}
+            <div className={styles.mainList}>
+                <div className={styles.logo}>
+                    <img src={logo} alt="WealthSimple"></img>
+                </div>
+                <a>
+                    <div className={styles.dropdown1}>
+                        <button className={styles.dropbtn}>What we offer</button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
+                    </div>
+                </a>
+                <a>
+                    <div className={styles.dropdown1_content}>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </a>
+                <a>
+                    <div className={styles.dropdown2}>
+                        <button className={styles.dropbtn}>Benefits</button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
+                    </div>
+                </a>
+                <a>
+                    <div className={styles.dropdown2_content}>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </a>
+                <a>
+                    <div className={styles.dropdown3}>
+                        <button className={styles.dropbtn}>Learn</button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
+                    </div>
+                </a>
+                <a>
+                    <div className={styles.dropdown3_content}>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </a>
+                <a>Support</a>
+                <div className={styles.navButtons}>
+                    <button>Log in</button>
+                    <button>Get Started</button>
+                </div>
             </div>
         </div>
     )
