@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import WealthsimpleTax from './components/WealthsimpleTax';
+import GetStarted from './components/GetStarted'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
           <Navbar />
           <WealthsimpleTax />
+          <GetStarted />
       </header>
     </div>
   );
