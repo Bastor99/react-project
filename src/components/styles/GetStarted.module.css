@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 
 .fullBody{
-    background-color: white;
+    background-color: #FCFCFC;
     width: 100%;
-    margin-top: 3%;
+
 }
 
 .mainElements{
+    margin-top: 5%;
     display: inline-flex;
 }
 
 .texts{
     margin: 2.5% 4.5%;
-    color: #201f1e;
+    color: #32302F;
     align-self: center;
 }
 
@@ -44,11 +47,17 @@
     border-radius: 40px;
     width: 25%;
     height: 10vh;
-    background-color: #201f1e;
+    background-color: #32302F;
     color: white;
     font-size: 2.5vh;
     font-weight: 600;
     font-family: "Roboto Condensed", sans-serif;
+    cursor: pointer;
+}
+
+.texts button:hover{
+    background-color: #575351;
+    transition: 700ms;
 }
 
 .mainImage{
@@ -57,4 +66,27 @@
 
 .mainImage img{
     width: 160%;
+}
+
+.info{
+    margin: 2.5% 4.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    color: #32302F;
+}
+
+.info h2{
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 1.2rem 0;
+    border-top: 1px solid #32302F;
+    padding-top: 10%;
+}
+
+.info p{
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
 }

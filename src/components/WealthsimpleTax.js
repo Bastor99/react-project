@@ -1,4 +1,4 @@
-import styles from './WealthsimpleTax.module.css';
+import styles from './styles/WealthsimpleTax.module.css';
 import img from '../bannerImage.png'
 
 function WealthsimpleTax() {
