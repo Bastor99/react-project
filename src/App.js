@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import WealthsimpleTax from './components/WealthsimpleTax';
 import GetStarted from './components/GetStarted'
+import TrustSection from './components/TrustSection'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <Navbar />
           <WealthsimpleTax />
           <GetStarted />
+          <TrustSection />
       </header>
     </div>
   );
